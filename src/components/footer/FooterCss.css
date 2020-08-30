@@ -43,11 +43,22 @@
     text-transform: uppercase;
 }
 
-
+@media only screen and (max-width:1500px) and (min-width:800px){
+    .footerNumber h4{
+        font-size: 30px !important;
+        font-weight: 400;
+    }
+}
+@media(max-width:480px){
+    .footerNumber h4{
+        font-size: 30px !important;
+        font-weight: 400;
+    }
+}
 .footerNumber h4{
     color: #3957ff;
-    font-size: 50px;
-    font-weight: 800;
+    font-size: 40px;
+    font-weight: 700;
     text-transform: capitalize;
 }
 

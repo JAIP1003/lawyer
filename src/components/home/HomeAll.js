@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import * as jp from './Home';
 
+import Navbar from '../navbars/Navbar';
 
-
+import './HomeCss.css';
 
 
 function HomeAll(){

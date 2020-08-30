@@ -5,11 +5,23 @@
     background-image: url("https://i.ibb.co/V9Ck6qs/photo-1593642532842-98d0fd5ebc1a-ixlib-rb-1-2.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;   
+    background-size: cover; 
+    margin-bottom: 100px;  
 }
 
+ /* .navhide2{
+display: none;
+} */
+
+/* @media(:0){
+    .navhide2{
+        height: 100%;
+        position: sticky;
+    }
+} */
+
 .CTSImage .CTSImageText{
-    padding: 300px 10%;
+    padding: 20vh 5vw;
     background-color: transparent;
     width: 60%;
 }
@@ -21,6 +33,7 @@
   font-weight: bolder;
   color: #212025;
     font-family: "Rubik",sans-serif;
+    margin-bottom: 30px;
 }
 .CTSImage .CTSImageText span{
     font-size: 23px;
@@ -39,34 +52,17 @@
 
 }
 
-@media(max-width:1500px){
-    .CTSImage .CTSImageText{
-        width: 80%;
-    }
-}
-
-@media(max-width:1200px){
-    .CTSImage .CTSImageText{
-        width: 100%;
-    }
-    .CTSImage .CTSImageText h1{
-        font-size: 45px;
-    } 
-}
-
 .CTSImage .CTSImageText p{
     font-size: 28px;
     color: #212025;
     font-family: "Roboto",sans-serif;
     margin-bottom: 50px;
-
 }
 
-.CTSImage .CTSImageText a{
+.LearnBtn1 a{
     text-decoration: none;
     cursor: pointer;
-    padding: 30px 52px;
-    background: #112957;
+    padding: 30px 50px;
     text-transform: capitalize;
     font-family: "Josefin Sans",sans-serif;
     color: #fff;
@@ -74,22 +70,127 @@
     font-size: 26px;
     font-weight: 500;
     letter-spacing: 2px;
-    transition: color 0.4s linear;
+    width: 317px !important;
 }
 
-
-.CTSImage .CTSImageText a:hover{
+.LearnBtn1 { 
+    position: relative; 
+    width: 317px;
+    background: #112957 !important;
+    color: #fff;
+}
    
-    background-color: #3957ff;
-    
+ .LearnBtn1 .overlay1{
+    width: 0;
+    transition: 0.2s ease;
+    background-color: #3957ff !important;
+    color: #fff;  
+   
 }
+
+.LearnBtn1:hover > .overlay1 {
+    height: 100%;
+    width: 100%;
+    display: block;
+} 
+
+@media(max-width:1500px){
+    .CTSImage .CTSImageText{
+        width: 80%;
+    }
+    .CTSImage .CTSImageText h1{
+        font-size: 60px;
+        text-shadow: 0px 1.5px, 1.5px 0px, 1.5px 1.5px;
+    }
+    .CTSImage .CTSImageText span{
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 20px;
+
+    }
+    .CTSImage .CTSImageText h3 p{
+        font-size: 24px;
+        margin-bottom: 45px;
+    }
+}
+
+@media(max-width:1200px){
+    .CTSImage .CTSImageText{
+        width: 70%;
+    }
+    .CTSImage .CTSImageText h1{
+        font-size: 45px;
+        text-shadow: 0px 1px, 1px 0px, 1px 1px;
+    } 
+    .CTSImage .CTSImageText span{
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 18px;
+    }
+    .CTSImage .CTSImageText h3 p{
+        font-size: 22px;
+        margin-bottom: 45px;
+    }
+    .CTSImage .CTSImageText span hr{
+        width: 80px;
+        height: 1px;
+        margin-right: 30px;
+    }
+}
+@media(max-width:600px){
+    .CTSImage .CTSImageText{
+        width: 100%;
+    }
+    .CTSImage .CTSImageText h1{
+        font-size: 35px;
+        text-shadow: 0px 1px, 1px 0px, 1px 1px;
+    } 
+    .CTSImage .CTSImageText span{
+        font-size: 14px;
+        font-weight: 300;
+        margin-bottom: 16px;
+    }
+    .CTSImage .CTSImageText p{
+        font-size: 14px;
+    }
+    .LearnBtn1 a{
+        font-size: 18px !important;
+        font-weight: 300;
+        letter-spacing: 1px;
+        padding: 25px;
+        color: #fff !important;
+    }
+    .LearnBtn1 {
+        width: 190px;
+    }
+    .CTSImage .CTSImageText span hr{
+        width: 60px;
+        height: 0.5px;
+        margin-right: 20px;
+    }
+
+    .PACard .singleCat .catCap h3 p{
+        margin-bottom: 23px;
+        font-size: 20px !important;
+        line-height: 30px;
+    }
+
+    .PACard .singleCat .catCap h3 a{
+        font-size: 25px !important;
+        font-weight: 600;
+        margin-bottom: 20px !important;
+    }
+}
+
+
+
 
 
 .PACard{
     border: 1px solid #ddd;
     background: #ffff;
     margin: 0 5px 50px 5px;
-    padding: 72px 50px;
+    padding: 7vh 3%;
 }
 
 .PACard .singleCat .catIcon{
@@ -108,6 +209,20 @@
     display: block;
     text-decoration: none;
 }
+
+@media only screen  and (max-width:1600px) and (min-width:992px){
+    .PACard .singleCat .catCap h3 p{
+        margin-bottom: 23px;
+        font-size: 20px !important;
+        line-height: 30px;
+    }
+    .PACard .singleCat .catCap h3 a{
+        font-size: 25px !important;
+        font-weight: 600;
+        margin-bottom: 20px !important;
+    }
+}
+
 
 .PACard .singleCat .catCap p{
     margin-bottom: 36px;
@@ -129,44 +244,55 @@
 }
 
 .ourPracticingArea{
-    padding: 10% 5% 0 5%;
+    padding: 5vh 5% 0 5%;
 }
 
-@media(max-width:1000px){
+@media(max-width:800px){
     .ourPracticingArea{
-        padding: 10% 0 0 0;
+        padding: 5vh 0 0 0;
+    }
+     .OPAImageText span h3{
+        font-size: 18px;
+    }
+    .OPAImageText span hr{
+        width: 60px;
+        height: 1px;
+        margin-right: 20px;
+    }
+     .OPAImageText h1{
+        font-size: 35px !important;
     }
 }
-.ourPracticingArea .OPAImageText{
+ .OPAImageText{
     width: 50%;
     padding-left: 15px;
-    padding-bottom: 100px;
+    padding-bottom: 3vh;
 }
 @media(max-width:1391px){
-    .ourPracticingArea .OPAImageText{
+     .OPAImageText{
         width: 90%;
     } 
 }
 
-.ourPracticingArea .OPAImageText span{
+ .OPAImageText span{
     font-size: 24px;
     font-family: "Josefin Sans",sans-serif;
     font-weight: 500;
-    margin-bottom: 62px;
+    margin-bottom: 3vh;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #3957ff;
     display: inline-flex !important;
 }
 
-.ourPracticingArea .OPAImageText span hr{
+ .OPAImageText span hr{
     width: 100px;
     background-color: #3957ff;
     height: 1.5px;
     margin-right: 30px;
 }
 
-.ourPracticingArea .OPAImageText h1{
+ .OPAImageText h1{
     font-size: 60px;
     display: block;
     color: #092c3f;
@@ -229,53 +355,17 @@
 /* about our law Agency */
 
 .aboutLawAgcy{
-    margin: 200px 0 0 0; 
+    margin: 20vh 0 0 0; 
 }
 .aboutLawAgcy .ALAImg img{
     width: 100%;
-    height: 130vh;
+    height: 132vh;
 }
 
 .ALACol2{
     background-color: #3957ff; 
     width: 100%;
-    padding: 120px 50px;
-}
-
-
-
-.aboutDetails .sectionTittle{
-    margin-bottom: 50px;
-}
-
-.aboutDetails .sectionTittle span{
-    color: #fff;
-    font-size: 24px;
-    font-weight: 500;
-    font-family: "Josefin Sans",sans-serif;
-    display: block;
-    margin-bottom: 40px;
-    text-transform: uppercase;
-    display: inline-flex !important;
-
-}
-
-.aboutDetails .sectionTittle span hr{
-    width: 60px;
-    background-color: #fff;
-    height: 1px;
-    margin-right: 30px;
-}
-
-.aboutDetails .sectionTittle h2{
-    color: #fff;
-    font-size: 60px;
-    display: block;
-    font-weight: 500;
-    letter-spacing: 1.5px;
-    font-family: "Josefin Sans",sans-serif;
-    margin-bottom: .5rem;
-    line-height: 1.2;
+    padding: 10vh 5%;
 }
 
 .aboutDetails .aboutMore p.peraTop{
@@ -296,50 +386,55 @@
     margin-bottom: 65px;
    
 }
-@media(max-width:1700px) and (min-width:800px){
+@media (max-width:1200px){
+    .aboutLawAgcy .ALAImg img{
+        width: 100%;
+        height: 90vh;
+    }
+}
+@media (max-width:800px){
     .aboutDetails .aboutMore p.peraTop{
-        margin-bottom: 10px;
+        margin-bottom: 20px;
+        font-size: 23px !important;
+        font-weight: 400;
     }
     .aboutDetails .aboutMore p.peraBottom{
-        margin-bottom: 15px;
+        margin-bottom: 45px;
+        font-size: 18px !important;
+        line-height: 30px;
     }
 }
 
-.aboutDetails .aboutMore a{
-    text-decoration: none;
-    cursor: pointer;
-    padding: 30px 52px;text-align: center;
-    background: #112957;
-    text-transform: capitalize;
-    font-family: "Josefin Sans",sans-serif;
-    color: #fff;
-    display: inline-block;
-    font-size: 26px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    transition: color 0.4s linear;
-}
-
-.aboutDetails .aboutMore a:hover{
-   
-    background-color: #3957ff;
-    
-}
 
 /* Are you Searching For a First-Class Consultant? */
 
 .fCConsultant{
     background-color: #3957ff;
-    padding: 150px 7%;
+    padding: 10vh 7%;
     margin: 200px 0;
 }
 
 .fCConsultant .wantToWorkCaption{
 width: 70%;
 }
-@media(max-width:1400px){
+@media(max-width:1650px){
+    .fCConsultant .wantToWorkCaption{
+        width: 90%;
+        }
+        .fCConsultant .wantToWorkCaption h2{
+            font-size: 48px !important;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+}
+@media (max-width:600px){
     .fCConsultant .wantToWorkCaption{
         width: 100%;
+        }
+        .fCConsultant .wantToWorkCaption h2{
+            font-size: 30px !important;
+            font-weight: 400;
+            line-height: 1;
         }
 }
 .fCConsultant .wantToWorkCaption h2{
@@ -350,28 +445,6 @@ width: 70%;
     font-family: "Josefin Sans",sans-serif;
 }
 
-.fCConsultant a.btnConsultant{
-    color: #fff;
-    text-decoration: none;
-    background: #0b1416;
-    padding: 27px 70px;
-    text-transform: capitalize;
-    font-family: "Josefin Sans",sans-serif;
-    display: inline-block;
-    font-size: 26px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    margin-top: 60px;
-    /* transition: color 0.4s linear;
-    position: relative;
-    z-index: 1; */
-    text-align: center;
-    vertical-align: middle;
-}
-
-.fCConsultant a.btnConsultant:hover{
-    background-color: #3957ff;
-}
 
 
             /* Our Recent Work */
@@ -404,7 +477,7 @@ width: 70%;
     color: #3957ff;
 }
  .ourPracticingArea .colmn{
-     margin: 0 10px 10vh 10px;
+     margin: 0 10px 5vh 10px;
      padding-bottom: 18vh;
      position: relative;
  }
@@ -426,28 +499,42 @@ width: 70%;
     position: absolute;
     top: 60%;
 }
-@media(max-width:1500px) and (min-width:1200px ) {
+@media(max-width:1700px) and (min-width:1200px) {
     .ourPracticingArea .singleServices .servicesCaption{
         width: 96%;
         padding: 10px;
+    }
+    .ourPracticingArea .singleServices .servicesCaption p a{
+        font-weight: 400;
+        font-size: 26px !important;
+        line-height: 1.3;
     }
 }
 
 @media(max-width:800px){
     .ourPracticingArea .singleServices .servicesCaption{
-        width: 96%;
+        width: 80%;
         padding: 10px 0;
         top: 60%;
     }
 
 }
-@media(max-width:400px){
+@media(max-width:600px){
     .ourPracticingArea .singleServices .servicesCaption{
         width: 96%;
         padding: 10px 0;
         top: 45%;
     }
 
+    .recentWorkDiv .ourPracticingArea .propertiesButton a{
+        padding: 0 20px 20px 20px;
+        font-size: 20px !important;
+    }
+    .ourPracticingArea .singleServices .servicesCaption p a{
+        font-weight: 400;
+        font-size: 26px !important;
+        line-height: 1.3;
+    }
 }
 
 .ourPracticingArea .singleServices .servicesCaption span{
@@ -488,7 +575,7 @@ width: 70%;
        /* FILL UP TO GET A QOTE */
 
        .fillUpToGet{
-           margin: 0 0 300px 0;
+           margin: 0 0 40vh 0;
        }
 .fillUpToGet .fUTGImg{
     position: relative;
@@ -507,24 +594,16 @@ width: 70%;
 .fillUpToGet .fUTGImg .fUTGForm .fUTGFormContainer {
     background-color: #3957ff;
     padding: 100px 70px;
+    margin: 0 15%;
 }
-@media(max-width:1400px){
-    .fillUpToGet .fUTGImg .fUTGForm .fUTGFormContainer {
-        background-color: #3957ff;
-        padding: 40px 30px;
-    }
+@media(max-width:1000px){
     .fillUpToGet .fUTGImg img{
         width: 100%;
-        height: 160vh;
+        height: 130vh;
        }
-       .fillUpToGet{
-        margin: 0 0 400px 0;
-    }
-}
-
-@media(min-width:1600px){
-    .fillUpToGet .fUTGFormContainer .rightCaption .sectionTittle{
-        width: 80%;
+       .fillUpToGet .fUTGImg .fUTGForm .fUTGFormContainer {
+        margin: 0 4%;
+        padding: 70px 40px;
     }
 }
 
@@ -555,12 +634,14 @@ width: 70%;
 }
 
 
-
+.colm{
+    margin-bottom: 10vh;
+}
 .ITGCaption{
     background-image: url("https://i.ibb.co/V9Ck6qs/photo-1593642532842-98d0fd5ebc1a-ixlib-rb-1-2.jpg");
     background-position: center;
     background-size: cover;
-    padding-top: 500px;
+    padding-top: 50vh;
 }
 
  .ITGCaption ul li{
@@ -574,9 +655,43 @@ width: 70%;
    width: 80%;
 }
 
-@media(max-width:500px){
+@media(max-width:700px){
     .ITGCaption ul li{
-        width: 100%;
+        font-size: 18px;
+        padding: 15px 30px 10px 40px;
+    }
+    .blogCap p{
+        font-size: 20px !important;
+        margin-bottom: 23px !important;
+    }
+    .blogCap h3 a{
+        font-size: 24px !important;
+        font-weight: 500;
+        line-height: 1.2;
+        margin-bottom: 17px;
+    }
+    .ITGCaption{
+        padding-top: 30vh;
+    }
+}
+
+@media only screen and (max-width:1500px) and (min-width:1200px){
+    .ITGCaption ul li{
+        font-size: 18px;
+        padding: 15px 30px 10px 40px;
+    }
+    .blogCap p{
+        font-size: 20px !important;
+        margin-bottom: 23px !important;
+    }
+    .blogCap h3 a{
+        font-size: 24px !important;
+        font-weight: 500;
+        line-height: 1.2;
+        margin-bottom: 17px;
+    }
+    .ITGCaption{
+        padding-top: 30vh;
     }
 }
 
@@ -584,7 +699,7 @@ width: 70%;
     background-image: url("http://demo2.themelexus.com/worldlife/wp-content/uploads/2019/07/h2-bg01.jpg");
     background-position: center;
     background-size: cover;
-    padding: 50px 0 50px 40px ;
+    padding: 5vh 2vw 5vh 4vw ;
 }
 
  .blogCap h3 a{
@@ -625,8 +740,8 @@ width: 70%;
 .OJCarousel{
     background-color: #3957ff;
     padding: 250px 100px;
-    margin: 200px 0 100px 0;
-}
+    margin: 10vh 0 10vh 0;
+} 
 
 @media(max-width:1000px){
     .OJCarousel{

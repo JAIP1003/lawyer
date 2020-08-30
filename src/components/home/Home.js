@@ -5,7 +5,7 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
 import './HomeCss.css';
-import { propTypes } from 'react-bootstrap/esm/Image';
+
 
 function CommittedToSuccess(){
     return(
@@ -14,11 +14,15 @@ function CommittedToSuccess(){
             <div className="CTSImageText">
                 <span><hr></hr>Committed to success</span>
                 <h1>Dont Feel Helpless We Fight for Justice</h1>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat is aute irure.</p>
-                <div>
+                <h3><p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                     aliquip ex ea commodo consequat is aute irure.</p></h3>
+                <div className="LearnBtn1">
+                <div className="overlay1">
+                <div className="anchar1">
                 <a href="about.html" >Learn About Us</a>
+                </div> 
                 </div>
-                <div className="LearnBtn"></div>
+                </div>
                 </div>   
         </div>
         </>
@@ -38,7 +42,7 @@ function PracticingAreaCard(props){
                     </div>
                     <div class="catCap">
                     <h3><a href="services.html">{props.title} </a></h3>
-                    <p>{props.paraInfo}</p>
+                    <h3><p>{props.paraInfo}</p></h3>
                     <a href="services.html" className="readMore1">Read More &gt;</a>
                     </div>
                     </div>
@@ -87,7 +91,7 @@ function PracticingAreaCards1(){
     return(
         <div className="ourPracticingArea">
                  <div className="OPAImageText">
-                <span><hr></hr>OUR PRACTICING AREA</span>
+                <span><hr></hr><h3>OUR PRACTICING AREA</h3></span>
                 <h1>Area Of Practice That Can Help You To Win</h1>
                 </div>
             <Container-fluid>
@@ -126,7 +130,7 @@ function OurLawyer(){
     return(
         <div className="ourPracticingArea">
                 <div className="OPAImageText">
-                <span><hr></hr>OUR LAWYERS</span>
+                <span><hr></hr><h3>OUR LAWYERS</h3></span>
                 <h1>Meet Our Dedicated Team Members.</h1>
                 </div>
                 <Container-fluid>
@@ -192,14 +196,21 @@ function AboutLawAgency(){
                     <Col xl={6} className="ALACol2">
                     <div className="aboutDetails">
                         <div className="rightCaption">
-                        <div className="sectionTittle sectionTittle2">
-                        <span><hr/>About Our Law agency</span>
-                        <h2>We are commited for better service</h2>
+                        <div style={{color:"#fff",width:"100%"}} className="OPAImageText">
+                        <span><hr style={{backgroundColor:"#fff"}}></hr><h3 style={{color:"#fff"}}>ABOUT OUR LAW AGENCY</h3></span>
+                        <h1 style={{color:"#fff"}}>We are commited for better service</h1>
                         </div>
                         <div className="aboutMore">
                         <p className="peraTop">Mollit anim laborum duis adseu dolor iuyn voluptcate velit ess cillum dolore egru lofrre dsu.</p>
-                        <p className=" peraBottom">Mollit anim laborum.Dvcuis aute serunt iruxvfg dhjkolohr indd re voluptate velit  esscillumlore eu quife nrulla parihatur. Excghcepteur sfwsignjnt occa cupidatat non aute iruxvfg dhjinulpadeserunt moll.</p>
-                        <a href="about.html" className="btn postBtn">Learn About Us</a>
+                        <p className=" peraBottom">Mollit anim laborum.Dvcuis aute serunt iruxvfg dhjkolohr indd re voluptate velit  esscillumlore 
+                        eu quife nrulla parihatur. Excghcepteur sfwsignjnt occa cupidatat non aute iruxvfg dhjinulpadeserunt moll.</p>
+                        <div className="LearnBtn1">
+                        <div className="overlay1">
+                        <div className="anchar1">
+                        <a href="about.html" >Learn About Us</a>
+                        </div>
+                        </div>
+                        </div>
                         </div>
                         </div>
                         </div>
@@ -220,9 +231,15 @@ function FCConsultant(){
                         <h2>Are you Searching For a First-Class Consultant?</h2>
                     </div>
                     </Col>
-                    <Col >
-                    <span className="btnCoslTop">
-                    <a href="#" className="btnConsultant frifht">Contact Now</a>
+                    <Col className="p-3">
+                    <span  className="btnCoslTop">
+                    <div className="LearnBtn1">
+                    <div className="overlay1">
+                    <div className="anchar1">
+                    <a href="about.html" >Contact Us</a>
+                    </div>
+                    </div>
+                    </div>
                     </span>
                     </Col>
                 </Row>
@@ -240,7 +257,7 @@ function RecentWork(){
                      <Row className="m-0">
                          <Col >
                          <div className="OPAImageText">
-                         <span><hr></hr>OUR RECENT WORK</span>
+                         <span><hr></hr><h3>OUR RECENT WORK</h3></span>
                             <h1>Reliable, Effective & Wining Law For Customers</h1>
                         </div>
                          </Col>
@@ -321,16 +338,12 @@ function FillUpToGet(){
             <div className="fUTGImg">
             <img src="http://demo2.themelexus.com/worldlife/wp-content/uploads/2019/07/h2-bg01.jpg" alt=""/>
            <div className="fUTGForm">
-            <Container >
+            <Container-fluid >
                 <Row className="m-0 ">
                     <Col className="fUTGFormContainer">
-                    <div className="aboutDetails">
-                        <div className="rightCaption">
-                        <div className="sectionTittle sectionTittle2">
-                        <span><hr/>About Our Law agency</span>
-                        <h2>We are commited for better service</h2>
-                        </div>
-                        </div>
+                         <div style={{color:"#fff",width:"100%"}} className="OPAImageText">
+                        <span><hr style={{backgroundColor:"#fff"}}></hr><h3 style={{color:"#fff"}}>FILL UP TO GET A QOTE</h3></span>
+                        <h1 style={{color:"#fff"}}>World's Leading Law Consultency Agency !</h1>
                         </div>
                     <Form>
                         <Container-fluid>
@@ -372,11 +385,9 @@ function FillUpToGet(){
                          Summit Now
                              </Button>
                         </Form>
-
-                      
                     </Col>
                 </Row>
-            </Container>
+            </Container-fluid>
             </div>
             </div>
         </div>
@@ -388,14 +399,13 @@ function InsightTrend(){
     return(
         <div className="ourPracticingArea">
                  <div className="OPAImageText">
-                <span><hr></hr>INSIGHT AND TRENDS ARTICLES</span>
+                <span><hr></hr><h3>INSIGHT AND TRENDS ARTICLES</h3></span>
                 <h1>Lawyers news from around the world selected by us.</h1>
                 </div>
             <Container-fluid>
                 <Row className="m-0">
-                    <Col xl={6} className="colmn">
-                    <div >
-
+                    <Col xl={6} className="colm">
+                    <div>
                         <div className="ITGCaption">
                         <ul>
                      <li >
@@ -414,7 +424,7 @@ function InsightTrend(){
                    
                         </div>
                     </Col>
-                    <Col   className="colmn">
+                    <Col   className="colm">
                     <div >
                     <div className="ITGCaption">
                         <ul>

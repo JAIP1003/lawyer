@@ -8,8 +8,8 @@ function Navbar()
 {
     return(
         <Container-fluid>
-            <div className="menu">
-            <Row className="m-0">
+            <div style={{backgroundColor:"#fff"}} className="menu sticky-top">
+            <Row className="m-0 ">
 
                 <Col  className="">
                 
@@ -28,14 +28,19 @@ function Navbar()
                     <li><a href="#">About</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Case Studies </a></li>
+                    <div className="subMenuT">
                     <li><a href="#">Blog</a>
-                    <ul class="submenu">
+                    <section className="actve">
+                    <ul>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Blog Details</a></li>
                     <li><a href="#">Element</a></li>
                     <li><a href="#">Case Details </a></li>
                     </ul>
+                    </section>  
                     </li>
+                    <div className="menuSubToggle"><i class="fa fa-plus" aria-hidden="true"></i></div>
+                    </div>
                     <li><a href="contact.html">Contact</a></li>
                     </ul>
                     </nav>
