@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import {Container, Row, Col} from 'react-bootstrap';
+// import AboutAll from '../about/AboutAll';
 
 import './NavbarCss.css';
 
@@ -24,24 +25,24 @@ function Navbar()
                 <div className="menuToggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
                     <nav className="active">
                     <ul id="navigation">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Case Studies </a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/AboutAll">About</a></li>
+                    <li><a href="/Services">Services</a></li>
+                    <li><a href="/CaseStudy">Case Studies </a></li>
                     <div className="subMenuT">
-                    <li><a href="#">Blog</a>
+                    <li><a href="/Blog">Blog</a>
                     <section className="actve">
                     <ul>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Blog Details</a></li>
-                    <li><a href="#">Element</a></li>
-                    <li><a href="#">Case Details </a></li>
+                    <li><a href="/Blog">Blog</a></li>
+                    <li><a href="/BlogDetails">Blog Details</a></li>
+                    <li><a href="/Elements">Element</a></li>
+                    <li><a href="/CaseDetails">Case Details </a></li>
                     </ul>
                     </section>  
                     </li>
                     <div className="menuSubToggle"><i class="fa fa-plus" aria-hidden="true"></i></div>
                     </div>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="/Contact">Contact</a></li>
                     </ul>
                     </nav>
                     <div className="headerBtn">

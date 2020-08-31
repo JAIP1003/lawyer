@@ -1,0 +1,90 @@
+.AbCImage {
+    background-image: url("http://demo2.themelexus.com/worldlife/wp-content/uploads/2019/07/h2-bg01.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    margin-bottom: 100px;  
+}
+
+.AbCImageText{
+    text-align: center;
+    padding: 40vh 0;
+}
+.AbCImageText h2{
+    color: #212025;
+    font-size: 70px;
+    font-weight: 900;
+    text-transform: capitalize;
+    line-height: 1;
+    font-family: "Josefin Sans",sans-serif;
+}
+
+@media (max-width:991px){
+    .AbCImageText h2{
+        font-size: 50px !important;
+        font-weight: 700;
+    }
+}
+
+.mb-50{
+    margin: 5vh;
+}
+.aboutCaption2 h3{
+    font-size: 50px;
+    color: #282828;
+    font-weight: 700;
+    margin-bottom: 10vh;
+    line-height: 1.5;
+    text-transform: capitalize;
+    font-family: "Josefin Sans",sans-serif;
+}
+
+.aboutCaption2 .sendCv a{
+    color: #282828;
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 1px;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+}
+.aboutCaption2 .sendCv hr{
+    width:300px;
+    background-color: #3957ff;
+}
+
+.aboutCaption h3{
+    font-size: 28px;
+    color: #282828;
+    font-weight: 400;
+    margin-bottom: 10vh;
+    line-height: 1.5;
+    font-family: "Josefin Sans",sans-serif;
+}
+
+
+.experience{
+    display: flex;
+}
+.experience .year span{
+    font-family: "Josefin Sans",sans-serif;
+    font-weight: 900;
+    font-size: 120px;
+    color: #282828;
+    line-height: 1;
+}
+
+.experience .yearDetails p{
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #282828;
+    padding-left: 40px;
+    font-family: "Josefin Sans",sans-serif;
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+
+.weDealOurCases{
+    margin: 20vh 0;
+}

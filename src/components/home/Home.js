@@ -19,7 +19,7 @@ function CommittedToSuccess(){
                 <div className="LearnBtn1">
                 <div className="overlay1">
                 <div className="anchar1">
-                <a href="about.html" >Learn About Us</a>
+                <a href="/AboutAll" >Learn About Us</a>
                 </div> 
                 </div>
                 </div>
@@ -41,9 +41,9 @@ function PracticingAreaCard(props){
                     <span className="flaticonCar">{props.logo}</span>
                     </div>
                     <div class="catCap">
-                    <h3><a href="services.html">{props.title} </a></h3>
+                    <h3><a href="/Services">{props.title} </a></h3>
                     <h3><p>{props.paraInfo}</p></h3>
-                    <a href="services.html" className="readMore1">Read More &gt;</a>
+                    <a href="/Services" className="readMore1">Read More &gt;</a>
                     </div>
                     </div>
                 </Col>
@@ -117,6 +117,40 @@ function PracticingAreaCards1(){
                         logo={PracticingAreaInfoArray[2].logo}
                         title={PracticingAreaInfoArray[2].title}
                         paraInfo={PracticingAreaInfoArray[2].paraInfo}
+                    />
+                    </Col>
+                </Row>
+            </Container-fluid>
+        </div>
+    );
+}
+
+function PracticingAreaCards2(){
+    return(
+        <div className="ourPracticingArea">
+            <Container-fluid>
+                <Row className="m-0">
+                    <Col lg={6} xl={4}>
+                    <PracticingAreaCard
+                        logo={PracticingAreaInfoArray[3].logo}
+                        title={PracticingAreaInfoArray[3].title}
+                        paraInfo={PracticingAreaInfoArray[3].paraInfo}
+                    />
+                    </Col>
+
+                    <Col lg={6} xl={4}>
+                    <PracticingAreaCard
+                        logo={PracticingAreaInfoArray[4].logo}
+                        title={PracticingAreaInfoArray[4].title}
+                        paraInfo={PracticingAreaInfoArray[4].paraInfo}
+                    />
+                    </Col>
+
+                    <Col lg={6} xl={4}>
+                    <PracticingAreaCard
+                        logo={PracticingAreaInfoArray[5].logo}
+                        title={PracticingAreaInfoArray[5].title}
+                        paraInfo={PracticingAreaInfoArray[5].paraInfo}
                     />
                     </Col>
                 </Row>
@@ -207,7 +241,7 @@ function AboutLawAgency(){
                         <div className="LearnBtn1">
                         <div className="overlay1">
                         <div className="anchar1">
-                        <a href="about.html" >Learn About Us</a>
+                        <a href="/AboutAll" >Learn About Us</a>
                         </div>
                         </div>
                         </div>
@@ -236,7 +270,7 @@ function FCConsultant(){
                     <div className="LearnBtn1">
                     <div className="overlay1">
                     <div className="anchar1">
-                    <a href="about.html" >Contact Us</a>
+                    <a href="/Contact" >Contact Us</a>
                     </div>
                     </div>
                     </div>
@@ -414,12 +448,12 @@ function InsightTrend(){
                     </ul>
                      </div>
                     <div className="blogCap">
-                     <h3><a href="#">16 Easy Ideas to Use in Our Everyday
+                     <h3><a href="/BlogDetails">16 Easy Ideas to Use in Our Everyday
                      Stuff in Kitchen.</a></h3>
                      <p>Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
                          labore et dolore magnua Quis ipsum suspendisse ultrices gra.
                          </p>
-                     <a href="#" className="moreBtn"><span><hr></hr>Read More</span></a>
+                     <a href="/BlogDetails" className="moreBtn"><span><hr></hr>Read More</span></a>
                      </div>
                    
                         </div>
@@ -434,12 +468,12 @@ function InsightTrend(){
                     </ul>
                      </div>
                       <div className="blogCap">
-                     <h3><a href="#">16 Easy Ideas to Use in Our Everyday
+                     <h3><a href="/BlogDetails">16 Easy Ideas to Use in Our Everyday
                      Stuff in Kitchen.</a></h3>
                      <p>Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
                          labore et dolore magnua Quis ipsum suspendisse ultrices gra.
                          </p>
-                     <a href="#" className="moreBtn"><span><hr></hr>Read More</span></a>
+                     <a href="/BlogDetails" className="moreBtn"><span><hr></hr>Read More</span></a>
                      </div>
                         </div>
                     </Col>
@@ -529,4 +563,4 @@ function OlivaJamCarousel(){
 
 
 export default CommittedToSuccess;
- export {PracticingAreaCards1,OurLawyer,AboutLawAgency,FCConsultant,RecentWork, FillUpToGet,InsightTrend,OlivaJam,OlivaJamCarousel};
+ export {PracticingAreaCards1,PracticingAreaCards2,AboutLawAgency,FillUpToGet,RecentWork, FCConsultant,OurLawyer,OlivaJamCarousel,InsightTrend};
