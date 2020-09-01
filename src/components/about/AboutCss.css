@@ -88,3 +88,67 @@
 .weDealOurCases{
     margin: 20vh 0;
 }
+
+
+        /* Contact pages */
+
+.getInTouch{
+    margin: 15vh 10%;
+}
+
+.getInTouch .col-12 h2{
+    font-size: 37px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-family: "Josefin Sans",sans-serif;
+    color: #092c3f;
+}
+
+.getInTouchCol1{
+    margin-right: 5%;
+}
+.itemInput{
+    padding: 4vh 4%;
+    margin-top: 5vh;
+}
+.btnnCT Button{
+    background-color:#fff;
+    color:#3957ff;
+    width: 30%;
+    font-size: 20px;
+    border-radius: 0%;
+}
+
+@media(max-width:600px){
+    .btnnCT Button{
+        width: 100%;
+    }
+}
+
+.btnnCT:hover Button{
+    background-color:#3957ff;
+    color:#fff;
+}
+
+.contactInfoTop .media h3{
+    /* font-size: 16px; */
+    color: #2a2a2a;
+    font-family: "Josefin Sans",sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+}
+@media(max-width:1205px){
+.contactInfoTop{
+    margin-top: 10vh;
+}
+}
+.contactInfoTop .media{
+    margin-bottom:7vh;
+}
+.contactInfoTop .media p{
+    color: #8a8a8a;
+    font-family: "Roboto",sans-serif;
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 15px;
+}

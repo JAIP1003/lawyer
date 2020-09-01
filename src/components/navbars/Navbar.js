@@ -42,7 +42,7 @@ function Navbar()
                     </li>
                     <div className="menuSubToggle"><i class="fa fa-plus" aria-hidden="true"></i></div>
                     </div>
-                    <li><a href="/Contact">Contact</a></li>
+                    <li><a href="/ContactAll">Contact</a></li>
                     </ul>
                     </nav>
                     <div className="headerBtn">

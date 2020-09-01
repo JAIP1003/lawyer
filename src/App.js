@@ -8,7 +8,7 @@ import Footer from './components/footer/Footer';
 import AboutAll from './components/about/AboutAll';
 import Services from './components/about/Services';
 import CaseStudy from './components/about/CaseStudy';
-import Contact from './components/about/Contact';
+import ContactAll from './components/about/ContactAll';
 import Blog from './components/about/Blog';
 import BlogDetails from './components/about/BlogDetails';
 import Elements from './components/about/Elements';
@@ -26,7 +26,7 @@ function App() {
                 <Route path="/AboutAll" component={AboutAll} exact/>
                 <Route path="/Services" component={Services} exact/>
                 <Route path="/CaseStudy" component={CaseStudy} exact/>
-                <Route path="/Contact" component={Contact} exact/>
+                <Route path="/ContactAll" component={ContactAll} exact/>
                 <Route path="/Blog" component={Blog} exact/>
                 <Route path="/BlogDetails" component={BlogDetails} exact/>
                 <Route path="/Elements" component={Elements} exact/>
