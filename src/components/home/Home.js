@@ -91,7 +91,7 @@ function PracticingAreaCards1(){
     return(
         <div className="ourPracticingArea">
                  <div className="OPAImageText">
-                <span><hr></hr><h3>OUR PRACTICING AREA</h3></span>
+                <span><hr></hr><h3>OUR P<script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script>RACTICING AREA</h3></span>
                 <h1>Area Of Practice That Can Help You To Win</h1>
                 </div>
             <Container-fluid>
